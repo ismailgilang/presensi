@@ -97,3 +97,7 @@ Route::get('/dashboardU/pengajuan', [UserController::class, 'pengajuan'])->name(
 Route::get('/dashboardU/pengajuan/create', [UserController::class, 'Cpengajuan'])->name('pengajuan.create');
 Route::post('/dashboardU/pengajuan/store', [UserController::class, 'Spengajuan'])->name('pengajuan.store');
 Route::get('/pengajuan/delete/{id}', [AdminController::class, 'Dpengajuan'])->name('pengajuan.destroyU');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

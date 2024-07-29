@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    @viteReactRefresh
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @yield('css')
     <style>
         body {
